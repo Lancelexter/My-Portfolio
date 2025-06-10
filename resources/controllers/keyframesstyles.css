@@ -1,0 +1,53 @@
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fill-text {
+    10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+@keyframes display-text {
+    25%, 100% {
+        display: none;
+    }
+}
+
+@keyframes showBars {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hideBars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes showHeader {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+    }
+}

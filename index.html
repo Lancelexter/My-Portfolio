@@ -4,108 +4,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lance Lexter Zabala - Portfolio</title>
-    <link rel="stylesheet" href="./resources/controllers/style.css">
+    <!-- import the icons from boxicons website v2, the v3 of boxicons is released, visit the https://boxicons.com/ for more info -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- create a file for styling from resources file called styles.css -->
+    <link rel="stylesheet" href="./resources/controllers/styles.css">
+    <link rel="stylesheet" href="./resources/controllers/responsivedesigns.css">
+    <link rel="stylesheet" href="./resources/controllers/keyframesstyles.css">
+    <!-- import the fonts from google fonts website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Lance Lexter Zabala</h1>
-        <p>A showcase of my skills, experience, and passion</p>
+    <header class="active">
+       <a href="#" class="logo">Lance Lexter.</a>
+       <i class='bx bx-menu' id="menu-icon"></i>
+       <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+       </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Lance Lexter Dela Cruz Zabala. I live in Alaminos City, Pangasinan, but I was born in Santa Maria, Bulacan. I was born on May 6, 2005, and I am 19 years old.</p>
-        <p>I am a highly motivated individual with a passion for music and playing instruments. I also have hands-on experience as an electrician. I'm always eager to learn and grow by taking on new challenges.</p>
-    </section>
+    <!-- bars background -->
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Editing</li>
-            <li>Programming</li>
-            <li>Plumbing</li>
-            <li>Electrician</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>Laborer in a construction site</li>
-            <li>Plumbing work</li>
-            <li>Instrument player in church</li>
-        </ul>
-    </section>
-
-    <section id="achievements">
-        <h2>Awards and Achievements</h2>
-        <ul>
-            <li>NCII EIM (Electrical Installation and Maintenance)</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <div><strong>Email:</strong><br> <a href="mailto:lancelexterzabala775@gmail.com">lancelexterzabala775@gmail.com</a></div>
-            <div><strong>Address:</strong><br> Yanaytay, Alaminos City, Pangasinan</div>
-            <div><strong>Phone:</strong><br> 09704026200</div>
-            <div><strong>LinkedIn:</strong><br> <a href="#">Lance Lexter Zabala</a></div>
-            <div><strong>GitHub:</strong><br> <a href="#">Lancelexter</a></div>
-            <div><strong>References:</strong><br>
-                Rolito R. Pasagoy
-                <br> Teacher II
-                <br>  09959780958
-                <br>   San Vicente National High School
-                <br>  San Vicente Alaminos City, Pangasinan
-            </div>  
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+    <!-- create a section named home -->
+    <section class="home active">
+        <div class="home-detail">
+            <h1>Lance Lexter Zabala</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Artist">Artist</span>
+                <span style="--i:3;" data-text="Musician">Musician</span>
+                <span style="--i:2;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:1;" data-text="Programmer">Programmer</span>
+            </h2>
+            <p>A showcase of my skills, experience, and passion for music.</p>
+            <div class="btn-sci">
+                <a href="#" download class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://www.facebook.com/hance.dela.cruz.426076"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/lancey_dz"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/@lexter.zabala.lan"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://www.linkedin.com/in/lance-lexter-zabala"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Lancelexter"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="./resources/images/img-profile.jpg">
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Lance Lexter Zabala</p>
-    </footer>
-<section id="get-in-touch" style="background: #f9f9f9; padding: 40px 20px;">
-    <h2 style="text-align: center;">Get In Touch</h2>
-    <div style="max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-        <form>
-            <label>Your Name</label>
-            <input type="text" placeholder="Your Name" style="width: 100%; padding: 10px; margin: 10px 0;" required>
-            <label>Your Email</label>
-            <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin: 10px 0;" required>
-            <label>Your Message</label>
-            <textarea rows="5" placeholder="Your Message" style="width: 100%; padding: 10px; margin: 10px 0;" required></textarea>
-            <button type="submit" style="background-color: #3498db; color: white; border: none; padding: 12px 20px; width: 100%; border-radius: 5px; cursor: pointer;">Send Message</button>
-        </form>
-        <p style="text-align: center; margin-top: 15px;">I'd love to connect! Feel free to <a href="#contact">reach out through any of the channels below</a>.</p>
-    </div>
-</section>
+    <!-- create a section named about -->
+    <section class="about ">
+        <div class="about-container">
+            <div class="about-box">
+                <h2>My <span>Background</span></h2>
+                <p class="desc">My name is Lance Lexter Dela Cruz Zabala. I live in Alaminos City, Pangasinan, 
+                    but I was born in Santa Maria, Bulacan. I was born on May 6, 2005, 
+                    and I am 19 years old.</p>
+                <button class="about-btn active">Education</button>
+                <button class="about-btn">Skils</button>
+                <button class="about-btn">Awards</button>
+                <button class="about-btn">Information</button>
+            </div>
 
-<section id="contact-cards" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 40px 20px; background: linear-gradient(to right, #8e44ad, #3498db); color: white;">
-    <div style="background: white; color: black; padding: 20px; border-radius: 10px; text-align: center; min-width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-        <h3>Email</h3>
-        <p>lancelexterzabala775@gmail.com</p>
-        <a href="mailto:lancelexterzabala775@gmail.com" style="margin: 5px; display: inline-block; padding: 10px 15px; background: #3498db; color: white; border-radius: 5px;">Send Email</a>
-        <a href="https://mail.google.com" target="_blank" style="margin: 5px; display: inline-block; padding: 10px 15px; background: #2980b9; color: white; border-radius: 5px;">Open in Gmail</a>
-    </div>
+            <div class="about-box">
+                <div class="about-detail education active">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">hello</p>
+                    <div class="about-list">
+                        <div class="about-item">
+                            <p class="year"> 2023 - Present</p>
+                            <h3>2-Year Information Technology</h3>
+                            <p class="course">STI Alaminos</p>  
+                        </div>
+                        <div class="about-item">
+                            <p class="year"> 2021 - 2023</p>
+                            <h3>TVL - Electrical Installation and Maintenance</h3>
+                            <p class="course">San Vicente National High School</p>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">hello</p>
+                    <div class="about-list">
+                        <div class="about-item">
+                            <i class='bx bxl-java'></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="about-item">
+                            <i class='bx bxl-python'></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="about-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="about-item">
+                            <i class='bx bxl-css3'></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="about-item">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="about-item">
+                            <i class='bx  bxs-data'></i> 
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div style="background: white; color: black; padding: 20px; border-radius: 10px; text-align: center; min-width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-        <h3>Phone</h3>
-        <p>+63 970 402 6200</p>
-        <a href="tel:+639704026200" style="margin: 5px; display: inline-block; padding: 10px 15px; background: #27ae60; color: white; border-radius: 5px;">Call Me</a>
-        <a href="https://wa.me/639704026200" target="_blank" style="margin: 5px; display: inline-block; padding: 10px 15px; background: #25D366; color: white; border-radius: 5px;">Message on WhatsApp</a>
-    </div>
+                <div class="about-detail awards">
+                    <h2 class="heading">My <span>Awards</span></h2>
+                    <p class="desc">hello</p>
+                    <div class="about-list">
+                        <div class="about-item">
+                            <p class="year"><i class='bx bx-calendar' style="font-size: 1.6rem;"></i> June 2023</p>
+                            <h3>NCII EIM (Electrical Installation and Maintenance)</h3>
+                            <p class="course">San Vicente National High School</p>
+                        </div>
+                    </div>
+                </div>
 
-    <div style="background: white; color: black; padding: 20px; border-radius: 10px; text-align: center; min-width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-        <h3>Follow Me</h3>
-        <p>Stay connected on social media</p>
-        <div style="font-size: 30px;">
-            <a href="#" style="margin: 0 10px;">Facebook</a>
-            <a href="#" style="margin: 0 10px;">Instagram</a>
-            <a href="#" style="margin: 0 10px;">GitHub</a>
-            <a href="#" style="margin: 0 10px;">TikTok</a>
+                <div class="about-detail information">
+                    <h2 class="heading">About <span>Information</span></h2>
+                    <p class="desc">This is my personal information.</p>
+                    <div class="about-list">
+                        <div class="about-item">
+                            <p>Name <span>Lance Lexter Zabala</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Gender <span>Male</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Age <span>20 Years Old</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Status <span>In-Relationship</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Address <span>Yanaytay, Alaminos City, Pangasinan, PH</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Nationality <span>Filipino</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Phone <span>(+63) 9704026200</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Email <span>lancelexterzabala775@gmail.com</span></p>
+                        </div>
+                        <div class="about-item">
+                            <p>Language <span>Filipino, English</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- create a section named services -->
+    <section class="services ">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-paint'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Graphics Design</h3>
+                <p>I have experience in Graphics Design like Canva and Adobe Photoshop.</p>
+            </div>
+            
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Programming</h3>
+                <p>I have experience in Programming like Java, C#, Python and Web Development like HTML, CSS and JS, and Mobile Development like Android Studio and XCode.</p>
+            </div>
+            
+            <div class="services-box">
+                <div class="icon">
+                    <i class="bx bx-music"></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Musician / Music Composition</h3>
+                <p>I have experience in musician that compostite music like, Guitar that sing the church</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- create a section named projects -->
+    <section class="projects ">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="projects-detail active">
+                    <p class="numb">01</p>
+                    <h3>Computerized Inventory and Sales System</h3>
+                    <p>The Electroric Sales System: Computerized Inventory, Transaction and Sales System
+                        For J EM I. Minimart. Prepared by: James Marcha, Mary Grace Benitez, Gina Mae Credo,
+                        Krizila Supangan, and Lance Lexter Zabala.
+                    </p>
+                    <div class="tech">
+                        <p>C#, .NET Framework Windows Form, SQL Server</p>
+                    </div>
+                    <div class="live-site">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Site</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="projects-detail">
+                    <p class="numb">02</p>
+                    <h3></h3>
+                    <p></p>
+                    <div class="tech">
+
+                    </div>
+                    <div class="live-site">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Site</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="projects-detail">
+                    <p class="numb">03</p>
+                    <h3></h3>
+                    <p></p>
+                    <div class="tech">
+
+                    </div>
+                    <div class="live-site">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Site</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <div class="projects-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="./resources/images/Project01.jpg">
+                        </div>
+                        <div class="img-tem">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                    <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- create a section named contact -->
+    <section class="contact ">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's Collaboration <span>Together</span></h2>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dicta ipsum aspernatur explicabo accusantium, obcaecati doloribus quia neque tempore voluptate? 
+                    Excepturi delectus ea autem voluptatibus magnam perferendis, molestias aliquid totam sunt!
+                </p>
+                <div class="contact-detail">
+                    <i class='bx bxs-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+63) 970 402 6200</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>lancelexterzabala775@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-map'></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>Yanaytay, Alaminos City, Pangasinan. Philippines</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="number" placeholder="Phone Number" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message <i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- create a file for sripts from resources file called scripts.js -->
+    <script src="./resources/controllers/scripts.js"></script>
 </body>
 </html>
